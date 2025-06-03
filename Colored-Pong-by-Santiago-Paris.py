@@ -80,7 +80,7 @@ malla.color("white")
 malla.goto(0, 400)
 malla.goto(0, -400)
 
-# --- FUNCIONES DE MOVIMIENTO ---
+
 def playerone_up():
     y = playerone.ycor()
     playerone.sety(y + 20)
