@@ -100,7 +100,7 @@ def playertwo_down():
 def exit_game():
     ventana.bye()
 
-# --- CONTROLES ---
+
 ventana.listen()
 ventana.onkeypress(playerone_up, "w")
 ventana.onkeypress(playerone_down, "s")
@@ -109,12 +109,12 @@ ventana.onkeypress(playertwo_down, "Down")
 ventana.onkeypress(exit_game, "Escape")
 ventana.onscreenclick(start_game)
 
-# --- MENÚ ---
+
 draw_menu()
 while menu_active:
     ventana.update()
 
-# --- BUCLE PRINCIPAL DEL JUEGO ---
+
 while True:
     ventana.update()
     ball.setx(ball.xcor() + ball.dx)
